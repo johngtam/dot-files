@@ -5,6 +5,14 @@
 echo "Starting bootstrapping"
 
 ##########################################################################
+# Installing rc files and configs
+##########################################################################
+cp .bash_profile ~/.bash_profile
+cp .vimrc ~/.vimrc
+cp .bashrc ~/.bashrc
+cp .tmux.conf ~/.tmux.conf
+
+##########################################################################
 # Installing and updating Homebrew
 ##########################################################################
 # Check for Homebrew, install if we don't have it
@@ -136,12 +144,10 @@ then
         git clone https://github.com/"${package}"
     done
 
-    cd ~/
+    cd ~
 
 fi
 
 ##########################################################################
 # Installing rc files and configs
 ##########################################################################
-
-
