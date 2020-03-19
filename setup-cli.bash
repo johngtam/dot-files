@@ -130,7 +130,7 @@ then
         sjl/gundo.vim.git
         easymotion/vim-easymotion.git
         christoomey/vim-tmux-navigator.git
-        jeetsukumaranceb/vim-orgmode.git
+        jceb/vim-orgmode.git
         jeetsukumaran/vim-buffergator.git
         vim-airline/vim-airline-themes.git
         majutsushi/tagbar.git
@@ -146,7 +146,3 @@ then
     cd ~
 
 fi
-
-##########################################################################
-# Installing rc files and configs
-##########################################################################
