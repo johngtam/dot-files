@@ -56,6 +56,7 @@ set splitright          " splits start on the right side first
 set splitbelow          " splits start on the bottom side first
 set mouse=a             " allow usage of mouse in Vim
 set ruler               " shows where your cursor is
+set scrolloff=5         " center the scroll when we go up and down
 
 " Toggle between pasting and nopaste
 nnoremap <leader>v :set paste<cr>
