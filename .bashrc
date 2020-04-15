@@ -69,6 +69,17 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# Fancier way of renaming files if I don't want to provide arg again.
+function mv() {
+        if [ "$#" -ne 1 ] || [ ! -f "$1" ]; then
+                command mv "$@"
+                return
+        fi
+
+        read -ei "$1" newfilename
+        command mv -v -- "$1" "$newfilename"
+}
+
 # ########################################################################
 # ctags commands
 # ########################################################################
